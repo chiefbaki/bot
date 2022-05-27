@@ -28,7 +28,7 @@ class VkBot:
         """
         Конструктор
         """
-        self.vk_session = vk_api.VkApi(token='9dfbe5b54005cdb0be6fbd84133db0e023a690cab09d7fb13241195a6b537379c2e0b17ae8d09edf331ee')
+        self.vk_session = vk_api.VkApi(token='')
         self.vk = self.vk_session.get_api()
         self.longpoll = VkLongPoll(self.vk_session)
         self.users_to_set_group: set = set()
